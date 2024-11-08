@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+#root{
+  padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.signup-wrapper{
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signup-container{
+  width: 300px;
+  padding: 10px;
+  position: absolute;
+
+  background-color: white;
+  border: 3px solid #ccc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup-container > label{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 5px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.signup-container > label > input{
+  flex-basis: 65%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signup-container button{
+  width: 100%;
+}
+
+.id-error{
+  color: red;
+  font-weight: bold;
+}
+
+
+.todo-container{
+  padding: 20px;
+  width: 500px;
+}
+
+.todo-container li{
+  margin-bottom: 10px;
+}
+
+.todo-container li > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-container li > div > span:last-child{
+  display: flex;
+}
+
+.todo-container li > div button{
+  margin: 0 5px;
+}
+
+.todo-compleate{
+  text-decoration: line-through;
 }
